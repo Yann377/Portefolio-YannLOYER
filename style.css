@@ -1,0 +1,278 @@
+*{
+  margin:0;
+  font-family: Arial;
+  text-decoration:none;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* Navbar */ 
+.navbar {
+  width: 100%;
+  background-color: transparent;
+  overflow: auto;
+  position: fixed;
+  padding:30px 0;
+  transition: .3s linear;
+}
+@media screen and (max-width: 600px){
+	.navbar{
+	  margin-top:100%;
+	}
+}
+.navmouvement{
+  background-color: #fff;
+  padding: 0px 0;
+}
+@media screen and (max-width: 600px){
+	.navmouvement{
+	margin-top:0%;
+	}
+}
+.navmouvement.navbar a{
+  color: black;
+}
+@media screen and (max-width: 600px){
+	.navmouvement.navbar a{
+	font-size: 10px;
+	margin-left: 5%;
+	}
+}
+.navmouvement.navbar a:hover{
+  color: white;
+  background-color: rgba(29, 72, 81);
+}
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight:bold;
+}
+@media screen and (max-width: 600px){
+	.navbar a{
+	  margin-left: 25%;
+	  font-size: 30px;
+	}
+}
+.navbar a:hover {
+  background-color: #000;
+}
+/* Scrollbar */
+::selection{
+  background-color: #48dbfb60;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #353b48;
+}
+/* Acceuil */
+#home{
+  height: 100vh;
+  min-height: 500px;
+  background: url(giphy.gif) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#home h1{
+  text-align: center;
+  color: white;
+  font-size:80px
+}
+img#photo-acceuil{
+  width: 15%;
+  text-align: center;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  padding:10%;
+  margin-bottom:-5%;
+}
+@media screen and (max-width: 600px){
+	img#photo-acceuil{
+		  width: 70%;
+		  margin-bottom: -15%;
+		}		
+	}
+img#fleche-acceuil{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 600px){
+	img#fleche-acceuil{
+	margin-top:75%;
+	width:50%;
+	}
+}
+#home h1::after{
+  content: "Yann Loyer";
+  font-family: Arial;
+  animation: textanim 10s linear infinite;
+}
+@media screen and (max-width: 600px){
+	#home h1::after{
+		font-size: 40px;
+	}
+}
+/*  Animation Nom */
+@keyframes textanim{
+  25%{
+    content: "Yann Loyer";
+	font-family: Impact;
+  }
+  50%{
+    content: "Yann Loyer";
+	font-family: American Typewriter, serif;
+  }
+  75%{
+    content: "Yann Loyer";
+	font-family: "Aurebesh";
+  }
+}
+@font-face{
+	font-family: "Aurebesh";
+	src: url('Police/Aurebesh.otf');
+}
+/* Section */
+#Presentation{
+  min-height: 275px;
+  background-color: rgba(29, 72, 81);
+  padding: 100px 0;
+}
+@media screen and (max-width: 600px){
+	#Presentation{
+		padding: 25px 0;
+	}
+}
+#Presentation h1{
+  color: white;
+  margin-left: 20px;
+  margin-bottom:15px;
+}
+.present{
+  padding: 0 40px;
+  display: flex;
+  margin-bottom: -110px;
+}
+@media screen and (max-width: 600px){
+	.present{
+	  display:block;
+	  text-align: center;
+	}
+}
+.present p{
+  margin-top: 45px;
+  margin-left: -110px;
+  text-align: justify;
+  color:white;
+}
+@media screen and (max-width: 600px){
+	.present p{
+	  font-weight:20;
+	  margin-left:auto;
+	  margin-top:auto;
+	}
+}
+#competences{
+  min-height: 275px;
+  padding: 100px 0;
+}
+@media screen and (max-width: 600px){
+	#competences{
+	  min-height: 100px;
+	  padding: 25px 0;
+	}
+}
+#competences h1{
+  margin:10px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+img#photo-presentation{
+  width:25%;
+  border-radius:50%;
+}
+@media screen and (max-width: 600px){
+	img#photo-presentation{
+		width:70%;
+	}
+}
+/* Bouton */
+input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px){
+	input[type = "submit"]{
+		margin-top:140px;
+	}
+}
+input[type = "submit"]:hover{
+  background: #2ecc71;
+}
+/* Progress bar */
+#progressbar {
+  background-color: rgba(186, 186, 186);
+  border-radius: 13px;
+  padding: 1px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10px;
+}
+#progressbar>div{
+  background-color: rgba(49, 140, 231);
+  height: 20px;
+  border-radius: 10px;
+  width:30%;
+  transition: width 2s;
+}
+#progressbar>div>span{
+  color:white;
+  width:30%;
+  transition: left 2s;
+}
+/* footer */
+footer {
+  background:url(giphy.gif) no-repeat center;
+  padding: 80px 0;
+  color: white;
+  text-align:center;
+  background-size: 100%;
+}
+@media screen and (max-width: 600px){
+	footer{
+	  padding: 45px 0;
+	}
+}
+.copyright{
+  font-weight:bold;
+}
+.copyright a{
+  color:white;
+  text-decoration:underline;
+}
+.liens a{
+  margin-top:20px;
+  margin-left:20px;
+}
