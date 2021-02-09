@@ -109,7 +109,7 @@ img#fleche-acceuil{
 }
 @media screen and (max-width: 600px){
 	img#fleche-acceuil{
-	margin-top:75%;
+	margin-top:40%;
 	width:50%;
 	}
 }
