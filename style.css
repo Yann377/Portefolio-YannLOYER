@@ -6,6 +6,12 @@
 html{
   scroll-behavior: smooth;
 }
+.blanc{
+  color: white;
+}
+.noir{
+  color: black;
+}
 /* Navbar page d'acceuil */ 
 .navbar {
   width: 100%;
