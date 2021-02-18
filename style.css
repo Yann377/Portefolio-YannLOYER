@@ -12,6 +12,11 @@ html{
 .noir{
   color: black;
 }
+hr{
+  margin-left:10%;
+  margin-right:10%;
+  margin-top: 1%;
+}
 /* Navbar page d'acceuil */ 
 .navbar {
   width: 100%;
@@ -371,6 +376,48 @@ img#photo-contact{
   margin-top: 10px;
   text-align:center;
 }
+#article{
+  margin-top: 1%;
+  margin-right:1%;
+  text-align: justify;
+}
+img#photo-article{
+  width: 45%;
+}
+@media screen and (max-width: 600px){
+	img#photo-article{
+		width: 100%;
+		margin-top: 3%;
+	}
+}
+.descriptionarticle {
+  padding: 0 40px;
+  display: flex;
+}
+@media screen and (max-width: 600px){
+	.descriptionarticle {
+		display: block;
+	}
+}
+p#titrearticle{
+  font-size: 25px;
+  text-decoration: underline;
+  margin-left: 3%;
+}
+@media screen and (max-width: 600px){
+	p#titrearticle{
+		text-align:center;
+	}
+}
+p#anneearticle{
+  margin-left: 5%;
+  font-size: 17px;
+}
+@media screen and (max-width: 600px){
+	p#anneearticle{
+		text-align: center;
+	}
+}
 /* Bouton */
 input[type = "submit"]{
   border:0;
@@ -381,33 +428,16 @@ input[type = "submit"]{
   border: 2px solid #2ecc71;
   padding: 14px 40px;
   outline: none;
-  color: white;
   border-radius: 24px;
   transition: 0.25s;
   cursor: pointer;
 }
 @media screen and (max-width: 600px){
-	input[type = "submit"]{
+	input.acc{
 		margin-top:140px;
 	}
 }
 input[type = "submit"]:hover{
-  background: #2ecc71;
-}
-input[type = "submit2"]{
-  border:0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #2ecc71;
-  padding: 14px 40px;
-  outline: none;
-  border-radius: 24px;
-  transition: 0.25s;
-  cursor: pointer;
-}
-input[type = "submit2"]:hover{
   background: #2ecc71;
 }
 /* Progress bar */
@@ -430,6 +460,31 @@ input[type = "submit2"]:hover{
   color:white;
   width:30%;
   transition: left 2s;
+}
+/* Commentaires*/
+#commentaire{
+  margin-left: 10%;
+  margin-top:1%;
+}
+textarea{
+  margin-left: 10%;
+  min-width: 80%;
+  max-width:80%;
+  min-height:80px;
+  max-height:80px;
+  padding: 5px;
+}
+.nomcom{
+  margin-left: 10%;
+  margin-bottom: 1%;
+  width: 30%;
+  padding: 5px;
+}
+@media screen and (max-width: 600px){
+	.nomcom{
+	width:80%;
+	padding: 4px;
+	}
 }
 /* footer */
 footer {
